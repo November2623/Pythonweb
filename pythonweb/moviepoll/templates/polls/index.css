@@ -1,0 +1,13 @@
+table{
+	width: 626px;
+	height: 525px;
+	border: 1px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 13px #0c4ddf;
+	text-align: center;
+	background-color: #CCFFFF;
+	border-collapse: collapse;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size:97%;
+}

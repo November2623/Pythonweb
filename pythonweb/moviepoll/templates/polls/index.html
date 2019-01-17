@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME PAGE</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/index.css' %}">
+<!--     <style>
+        table{
+                width: 626px;
+                height: 525px;
+                border: 1px;
+                border-radius: 10px;
+                box-shadow: 5px 4px 13px #0c4ddf;
+                text-align: center;
+                background-color: #CCFFFF;
+                border-collapse: collapse;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size:97%;
+            }
+    </style> -->
+</head>
+<body>
+    <table>
+        <h1 align='center'>Intek Movie Friday Poll</h1>
+                {% if question_lists %}
+                    {% for question in question_lists %}
+                     <div>
+                         <a href='/polls/{{question.id}}/'>{{ question.question_text }}</a>
+                     </div>
+                     {% endfor %}
+                {% else %}
+                    <p>No data</p>
+                 {% endif %}
+    </table>
+
+</body>
+</html>
