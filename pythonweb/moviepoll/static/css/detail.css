@@ -1,5 +1,5 @@
-table{
-    margin-top: 100px;
+form{
+    margin:auto;
 	width: 626px;
 	height: 525px;
 	border: 1px;
@@ -12,10 +12,28 @@ table{
 	background-position: bottom;
     background-size:97%;
     text-align: left;
+    padding: 20px;
 }
 body{
     background-color: grey; 
 }
 tr{
     padding-left: 30px;
+}
+div{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#button{
+    margin-left: 300px;
+}
+#header{
+    background-color: bisque;
+    width: 626px;
+    margin-top: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+body{
+    background-color: whitesmoke;
 }

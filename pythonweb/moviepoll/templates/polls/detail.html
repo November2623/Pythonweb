@@ -6,22 +6,19 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
 </head>
 <body>
-    <h1 align='center'>{{question.question_text}}</h1>
-    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    
     <form action="{% url 'result' question.id %}" method="post">
+    <h1 align='center' id='header'>{{question.question_text}}</h1>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
         {% csrf_token %}
-        <table align='center'>
         {% for choice in question.choice_set.all %}
-            <tr>
-                <th>
+            <div>
                     <input type="radio" name="choice" id="{{choice.id}}" value="{{ choice.id}}"> {{ choice.choice_text}}            
-                </th>
-            <tr>
+            </div>
         {% endfor %}
-        <tr>
-            <th><input type="submit" value='Vote'></th>
-        </tr>
-        </table>
+        <div id='button'>
+            <input type="submit" value='Vote'>
+        </div>
     </form>
 </body>
 </html>
