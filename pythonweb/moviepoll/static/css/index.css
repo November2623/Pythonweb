@@ -1,0 +1,27 @@
+/* static/css/index.css */
+table{
+    margin-top: 100px;
+	width: 626px;
+	height: 525px;
+	border: 1px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 13px #0c4ddf;
+	text-align: center;
+	background-color: #CCFFFF;
+	border-collapse: collapse;
+	background-repeat: no-repeat;
+	background-position: bottom;
+    background-size:97%;
+    text-align: left;
+
+}
+body{
+    background-color: aqua;
+}
+#header{
+    background-color: bisque;
+    width: 626px;
+    margin-top: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
